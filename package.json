@@ -1,10 +1,11 @@
 {
   "name": "sndr",
-  "version": "1.0.0-beta1",
+  "version": "1.0.2",
   "description": "Sndr facilitates testing of APIs / making of API wrappers.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'",
+    "pub": "tsc && git add . && git commit -m \"Automatic commit -- new published version\" && git push && npm publish"
   },
   "repository": {
     "type": "git",
