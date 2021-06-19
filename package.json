@@ -1,0 +1,42 @@
+{
+  "name": "sndr",
+  "version": "1.0.0-beta0",
+  "description": "Sndr facilitates testing of APIs / making of API wrappers.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/informathemusic/mksnd.git"
+  },
+  "keywords": [
+    "API"
+  ],
+  "author": "InforMatheMusic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/informathemusic/mksnd/issues"
+  },
+  "homepage": "https://github.com/informathemusic/mksnd#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/merge-deep": "^3.0.0",
+    "@types/mocha": "^8.2.2",
+    "@types/node-fetch": "^2.5.10",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.29.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "mocha": "^9.0.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4",
+    "tslib": "^2.3.0"
+  },
+  "dependencies": {
+    "merge-deep": "^1.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}
