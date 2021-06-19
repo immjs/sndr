@@ -1,0 +1,5 @@
+/* The only reason i have this file is because of the scrollbar */
+
+html {
+  overflow-y: auto !important;
+}
