@@ -17,5 +17,7 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    'no-param-reassign': ['error', { props: false }],
+    'max-len': ['error', { code: 120, ignoreStrings: true }],
   },
 };
