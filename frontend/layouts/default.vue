@@ -2,7 +2,7 @@
   <v-app id="inspire">
     <v-app-bar
       app
-      color="white"
+      color="#151515"
       flat
     >
       <v-avatar
@@ -13,7 +13,7 @@
       <v-tabs
         centered
         class="ml-n9"
-        color="grey darken-1"
+        color="white"
       >
         <v-tab
           v-for="link in links"
@@ -36,14 +36,26 @@
   </v-app>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   data: () => ({
     links: [
-      'Dashboard',
-      'Messages',
-      'Profile',
-      'Updates',
+      {
+        display: 'Home',
+        href: '/',
+      },
+      {
+        display: 'Modules',
+        href: '/modules',
+      },
+      {
+        display: 'Getting Started',
+        href: '/getting-started',
+      },
+      {
+        display: 'Updates',
+        href: '/updates',
+      },
     ],
   }),
 }
